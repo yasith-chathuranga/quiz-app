@@ -4,12 +4,11 @@
 </div>
 
 ## Introduction
-**Quiz Master** is a fun and interactive quiz app built with **React Native**, **TypeScript**, and **Expo**, designed to provide a seamless and engaging user experience. It features a user-friendly interface, multiple quiz categories, and smooth navigation, making learning enjoyable and accessible. Optimized for both Android and iOS, Quiz Master ensures a responsive design with offline support, allowing users to test their knowledge anytime, anywhere. Powered by React Navigation for easy transitions and TypeScript for better maintainability, this app offers a well-structured and dynamic quiz experience for all users.
-
+**Quiz Master** is a fun and interactive quiz app built with **React Native**, **TypeScript**, and **Expo**, designed to provide a seamless and engaging user experience. It features a user-friendly interface, multiple quiz categories, and smooth navigation, making learning enjoyable and accessible. Optimized for both Android and iOS, Quiz Master ensures a responsive design with a well-structured and dynamic quiz experience. Powered by React Navigation for easy transitions and TypeScript for better maintainability, this app offers an interactive and intuitive platform for users to test their knowledge anytime.
 #### User Interface
 
 <div>
-  <img src="assets/collage-ui.jpg" alt="collage-ui" width="auto" height="auto">
+  <img src="assets/collage-ui.png" alt="collage-ui" width="auto" height="auto">
 </div>
 
 ## Technologies Used

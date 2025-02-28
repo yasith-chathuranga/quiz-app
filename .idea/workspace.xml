@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a540835b-8438-4067-a11b-38a2936921d4" name="Changes" comment="README.md created">
+    <list default="true" id="a540835b-8438-4067-a11b-38a2936921d4" name="Changes" comment="do some changes and remove some unused things">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/quiz.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/quiz.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/bg-home.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740752334709</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="do some changes and remove some unused things">
+      <option name="closed" value="true" />
+      <created>1740753281786</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740753281786</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +196,7 @@
     <MESSAGE value="LICENSE created" />
     <MESSAGE value="README.md created" />
     <MESSAGE value="add image to quiz page and do some refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="add image to quiz page and do some refactor" />
+    <MESSAGE value="do some changes and remove some unused things" />
+    <option name="LAST_COMMIT_MESSAGE" value="do some changes and remove some unused things" />
   </component>
 </project>
