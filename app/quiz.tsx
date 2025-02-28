@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { View, StyleSheet, ImageBackground } from "react-native";
+import { View, StyleSheet, ImageBackground, Image } from "react-native";
 import { useLocalSearchParams } from "expo-router";
 import { quizModules } from "../constants/quiz";
 import { Button, Card, Title, Text } from "react-native-paper";
 import { LinearGradient } from "expo-linear-gradient";
-import { MaterialIcons } from "@expo/vector-icons"; // For icons
-import backgroundImage from "../assets/images/bg-background.jpg"; // Import your background image
+import { MaterialIcons } from "@expo/vector-icons";
+import backgroundImage from "../assets/images/bg-background.jpg";
+import headerImage from "../assets/images/bg-quiz.png";
 
 const QuizScreen = () => {
     const { module } = useLocalSearchParams();
@@ -51,37 +52,37 @@ const QuizScreen = () => {
         return (
             <ImageBackground source={backgroundImage} style={styles.background}>
                 <View style={styles.overlay}>
+                    <MaterialIcons
+                        name="emoji-events"
+                        size={150}
+                        color="#FFD700"
+                        style={styles.icon}
+                    />
+                    <Title style={styles.resultTitle}>Quiz Results</Title>
                     <View style={styles.glassCard}>
                         <LinearGradient
                             colors={["rgba(255, 255, 255, 0.3)", "rgba(255, 255, 255, 0.1)"]}
                             style={styles.glassGradient}
                         >
                             <Card.Content style={styles.cardContent}>
-                                <MaterialIcons
-                                    name="emoji-events"
-                                    size={50}
-                                    color="#FFD700"
-                                    style={styles.icon}
-                                />
-                                <Title style={styles.resultTitle}>Quiz Results</Title>
                                 <Text style={styles.resultText}>
                                     Your Score: {score}/{selectedModule.questions.length}
                                 </Text>
                             </Card.Content>
-                            <Card.Actions style={styles.cardActions}>
-                                <Button
-                                    mode="contained"
-                                    style={styles.button}
-                                    labelStyle={styles.buttonLabel}
-                                    onPress={() =>
-                                        setState({ currentQuestion: 0, score: 0, showResult: false })
-                                    }
-                                >
-                                    Restart Quiz
-                                </Button>
-                            </Card.Actions>
                         </LinearGradient>
                     </View>
+                    <Card.Actions style={styles.cardActions}>
+                        <Button
+                            mode="contained"
+                            style={styles.buttonBack}
+                            labelStyle={styles.buttonBackLabel}
+                            onPress={() =>
+                                setState({ currentQuestion: 0, score: 0, showResult: false })
+                            }
+                        >
+                            Restart Quiz
+                        </Button>
+                    </Card.Actions>
                 </View>
             </ImageBackground>
         );
@@ -90,6 +91,13 @@ const QuizScreen = () => {
     return (
         <ImageBackground source={backgroundImage} style={styles.background}>
             <View style={styles.overlay}>
+                {/* Header Image */}
+                <Image
+                    source={headerImage}
+                    style={styles.headerImage}
+                    resizeMode="contain"
+                />
+                {/* Card */}
                 <View style={styles.glassCard}>
                     <LinearGradient
                         colors={["rgba(255, 255, 255, 0.3)", "rgba(255, 255, 255, 0.1)"]}
@@ -140,6 +148,11 @@ const styles = StyleSheet.create({
         alignItems: "center",
         backgroundColor: "rgba(0, 0, 0, 0.5)",
     },
+    headerImage: {
+        width: "100%",
+        height: 150,
+        marginBottom: 20,
+    },
     glassCard: {
         width: "90%",
         maxWidth: 400,
@@ -180,9 +193,8 @@ const styles = StyleSheet.create({
     },
     resultText: {
         fontSize: 22,
-        marginBottom: 20,
         textAlign: "center",
-        color: "#fff",
+        color: "yellow",
     },
     errorText: {
         fontSize: 18,
@@ -203,8 +215,20 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         color: "white",
     },
+    buttonBack: {
+        width: 350,
+        paddingVertical: 10,
+        borderRadius: 10,
+        backgroundColor: "#6200ee",
+        marginTop: 30,
+    },
+    buttonBackLabel: {
+        fontSize: 18,
+        fontWeight: "bold",
+        color: "white",
+    },
     icon: {
-        marginBottom: 10,
+        marginBottom: 20,
     },
     cardActions: {
         justifyContent: "center",

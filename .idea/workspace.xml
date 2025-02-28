@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a540835b-8438-4067-a11b-38a2936921d4" name="Changes" comment="">
+    <list default="true" id="a540835b-8438-4067-a11b-38a2936921d4" name="Changes" comment="README.md created">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/quiz.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/quiz.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/quiz.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/quiz.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/bg-home.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/media/yasith/Acer/IJSE 68 Batch/MAD/quiz-app/assets",
+    "last_opened_file_path": "/media/yasith/Acer/IJSE 68 Batch/MAD/quiz-app/assets/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,8 +78,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/assets/images" />
+      <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/assets/icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -145,11 +145,42 @@
       <workItem from="1740710394425" duration="1403000" />
       <workItem from="1740713121188" duration="75000" />
       <workItem from="1740718600408" duration="16145000" />
-      <workItem from="1740741253870" duration="2580000" />
+      <workItem from="1740741253870" duration="10151000" />
     </task>
+    <task id="LOCAL-00001" summary="added some quiz &amp; some bugs fixed">
+      <option name="closed" value="true" />
+      <created>1740744147843</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740744147843</updated>
+    </task>
+    <task id="LOCAL-00002" summary="LICENSE created">
+      <option name="closed" value="true" />
+      <created>1740745228608</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740745228608</updated>
+    </task>
+    <task id="LOCAL-00003" summary="README.md created">
+      <option name="closed" value="true" />
+      <created>1740747320381</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740747320381</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added some quiz &amp; some bugs fixed" />
+    <MESSAGE value="LICENSE created" />
+    <MESSAGE value="README.md created" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md created" />
   </component>
 </project>
