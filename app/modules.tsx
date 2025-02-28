@@ -28,7 +28,7 @@ export default function ModulesScreen() {
                     <Link key={module.id} href={`/quiz?module=${module.id}`} asChild>
                         <Card style={styles.card}>
                             <LinearGradient
-                                colors={["#6a11cb", "#2575fc"]} // Modern gradient colors
+                                colors={["#6a11cb", "#2575fc"]}
                                 start={{ x: 0, y: 0 }}
                                 end={{ x: 1, y: 1 }}
                                 style={styles.cardGradient}

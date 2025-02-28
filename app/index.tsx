@@ -13,7 +13,9 @@ export default function HomeScreen() {
                     <Image source={logo} style={styles.logo} />
 
                     <Text style={styles.subtitle}>Learning is Everything</Text>
-                    <Text style={styles.subtitleSecondary}>Learning with pleasure with Dear Programmer, Wherever you are!</Text>
+                    <Text style={styles.subtitleSecondary}>
+                        Learning with pleasure with Dear Programmer, Wherever you are!
+                    </Text>
 
                     <Link href="/modules" asChild>
                         <Button
@@ -25,14 +27,15 @@ export default function HomeScreen() {
                         </Button>
                     </Link>
 
-                    <Button
-                        mode="outlined"
-                        style={[styles.button, styles.secondaryButton]}
-                        labelStyle={styles.secondaryButtonLabel}
-                        onPress={() => console.log("Learn More Pressed")}
-                    >
-                        Learn More
-                    </Button>
+                    <Link href="/about" asChild>
+                        <Button
+                            mode="outlined"
+                            style={StyleSheet.flatten([styles.button, styles.secondaryButton])}
+                            labelStyle={styles.secondaryButtonLabel}
+                        >
+                            About the App
+                        </Button>
+                    </Link>
                 </View>
             </View>
         </ImageBackground>
@@ -82,7 +85,7 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         borderRadius: 10,
         backgroundColor: "#6200ee",
-        marginTop: 30,
+        marginTop: 10,
     },
     secondaryButton: {
         backgroundColor: "#a793e3",
